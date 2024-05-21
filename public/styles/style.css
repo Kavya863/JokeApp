@@ -1,0 +1,102 @@
+ body{
+    margin: 0;
+    padding : 0;
+    display: flex;
+    justify-content: center;
+}
+ body {
+    background-image: url("/images/emoji1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    
+}
+.maincontainer {
+height: 800px;
+ width: 700px;
+ margin-top: 20px;
+ background-color: #FFC100;
+ display: flex;
+ align-items: center;
+ position: absolute;
+ flex-direction: column;
+ border-radius: 30px;
+
+}
+
+.formbody{
+    font-size: 1.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.formbody h2{
+   margin-bottom: 5px;
+}
+
+.formbody > h2,h4{
+    text-align: center;
+
+}
+form{
+    margin-top: 20px;
+    
+}
+input[type = text] {
+    width: 90%;
+    font-size: medium;
+    padding: 13px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    font-size: 18px;
+    width: 20%;
+    background-color: #4c77af;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    margin-left: 180px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
+.jokearea {
+    width: 680px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.jokearea > #left{
+    padding-left: 40px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+
+}
+.jokearea > #right {
+text-align: right;
+margin-right: 240px;
+display: flex;
+flex-direction: column;
+}
+ 
+
+@media (max-width: 650px) {
+   
+    .maincontainer {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller headings */
+    }
+    
+}

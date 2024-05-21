@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bring Smile On Your Face</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="formbody">
+            <h2>Bring smile on your charming face😊</h2>
+            <h4>Hit your name, Get your joke!</h4>
+
+           <form action="/" id="form" class="form" method="post"> 
+              <label for="firstName">Enter Your First Name : </label><br>
+              <input type="text" id="firstName" name="firstName" required ><br>
+
+              <label for="lastName">Enter Your Last Name : </label><br>
+              <input type="text" id="lastName" name="lastName" required><br>
+
+              <input type="submit" class="form-submit" value="Hit Me">
+           </form> 
+         </div>
+         <div class="jokearea">
+             <% if (locals.data) { %>     
+                   <% if (data.error) { %>
+                      <h3 style="color: red;">Error: <%= data.message %></h3>
+                      <a href="/">Refresh Me</a>
+
+                    <% } else {%>      
+                       <h2>  <%= data.joke %>  </h2> <br>
+                       <h3>Category :- <%= data.category %> </h3> <br>
+                       <a href="/">Refresh Me</a>
+                    <% } %>              
+                 <% } else {%>
+                      <p id="left">A day without laughter is a day wasted</p><br>
+                      <p id="right">Charlie Chaplin</p>
+                <% } %>  
+               </div>
+    </div> 
+</body>
+</html>
