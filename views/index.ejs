@@ -30,7 +30,15 @@
 
                     <% } else {%>      
                        <h2>  <%= data.joke %>  </h2> <br>
-                       <h3>Category :- <%= data.category %> </h3> <br>
+                       <h3>Category :- <%= data.category %> </h3> <br>                       
+                       <div id = "myDiv">
+                        <img id = "myImage" 
+                        src = "/images/laughing<%= giff %>.gif"></div><br>
+                        <script type = "text/javascript">   
+                        setTimeout(function(){
+                        document.getElementById("myDiv").style.display="none";
+                        }, 5000);  
+                        </script>
                        <a href="/">Refresh Me</a>
                     <% } %>              
                  <% } else {%>
